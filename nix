@@ -9,7 +9,7 @@ parted /dev/sda -- mkpart ESP fat32 1MB 512MB
 parted /dev/sda -- set 3 esp on
 lsblk
 echo =================
-mkfs.ext4 -L nixos /dev/sda
+mkfs.ext4 -L nixos /dev/sda1
 mkswap -L swap /dev/sda2
 swapon /dev/sda2
 mkfs.fat -F 32 -n boot /dev/sda3
