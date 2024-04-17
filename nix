@@ -1,6 +1,6 @@
 #!bin/sh -eux
 echo =================
-sudo -i
+#sudo -i
 lsblk
 echo =================
 parted /dev/sda -- mklabel gpt
